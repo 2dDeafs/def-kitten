@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4C10564E1896DED60006306A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C10564D1896DED60006306A /* Foundation.framework */; };
 		4C1056501896DED60006306A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C10564F1896DED60006306A /* CoreGraphics.framework */; };
-		4C1056521896DED60006306A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1056511896DED60006306A /* UIKit.framework */; };
 		4C1056581896DED60006306A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1056561896DED60006306A /* InfoPlist.strings */; };
 		4C10565A1896DED60006306A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1056591896DED60006306A /* main.m */; };
 		4C10565E1896DED60006306A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C10565D1896DED60006306A /* AppDelegate.m */; };
@@ -21,6 +20,10 @@
 		4C10566F1896DED60006306A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1056511896DED60006306A /* UIKit.framework */; };
 		4C1056771896DED60006306A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1056751896DED60006306A /* InfoPlist.strings */; };
 		4C1056791896DED60006306A /* TesteColaborativoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1056781896DED60006306A /* TesteColaborativoTests.m */; };
+		4C44331018997D45002BF788 /* ListaCategoriasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C44330F18997D45002BF788 /* ListaCategoriasViewController.m */; };
+		4C44B00E18980D51006E86F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1056511896DED60006306A /* UIKit.framework */; };
+		4C44B0121898270D006E86F7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C44B0111898270D006E86F7 /* CoreAudio.framework */; };
+		4C44B01318982844006E86F7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C44B00F189810E5006E86F7 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		4C1056741896DED60006306A /* TesteColaborativoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TesteColaborativoTests-Info.plist"; sourceTree = "<group>"; };
 		4C1056761896DED60006306A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C1056781896DED60006306A /* TesteColaborativoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesteColaborativoTests.m; sourceTree = "<group>"; };
+		4C44330E18997D45002BF788 /* ListaCategoriasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaCategoriasViewController.h; sourceTree = "<group>"; };
+		4C44330F18997D45002BF788 /* ListaCategoriasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaCategoriasViewController.m; sourceTree = "<group>"; };
+		4C44B00F189810E5006E86F7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4C44B0111898270D006E86F7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C44B01318982844006E86F7 /* AudioToolbox.framework in Frameworks */,
+				4C44B0121898270D006E86F7 /* CoreAudio.framework in Frameworks */,
+				4C44B00E18980D51006E86F7 /* UIKit.framework in Frameworks */,
 				4C1056501896DED60006306A /* CoreGraphics.framework in Frameworks */,
-				4C1056521896DED60006306A /* UIKit.framework in Frameworks */,
 				4C10564E1896DED60006306A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +110,8 @@
 		4C10564C1896DED60006306A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C44B0111898270D006E86F7 /* CoreAudio.framework */,
+				4C44B00F189810E5006E86F7 /* AudioToolbox.framework */,
 				4C10564D1896DED60006306A /* Foundation.framework */,
 				4C10564F1896DED60006306A /* CoreGraphics.framework */,
 				4C1056511896DED60006306A /* UIKit.framework */,
@@ -115,6 +126,8 @@
 				4C10565C1896DED60006306A /* AppDelegate.h */,
 				4C10565D1896DED60006306A /* AppDelegate.m */,
 				4C10565F1896DED60006306A /* Main.storyboard */,
+				4C44330E18997D45002BF788 /* ListaCategoriasViewController.h */,
+				4C44330F18997D45002BF788 /* ListaCategoriasViewController.m */,
 				4C1056621896DED60006306A /* ViewController.h */,
 				4C1056631896DED60006306A /* ViewController.m */,
 				4C1056651896DED60006306A /* Images.xcassets */,
@@ -249,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C44331018997D45002BF788 /* ListaCategoriasViewController.m in Sources */,
 				4C1056641896DED60006306A /* ViewController.m in Sources */,
 				4C10565E1896DED60006306A /* AppDelegate.m in Sources */,
 				4C10565A1896DED60006306A /* main.m in Sources */,
@@ -460,6 +474,7 @@
 				4C10567E1896DED60006306A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C10567F1896DED60006306A /* Build configuration list for PBXNativeTarget "TesteColaborativoTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +483,7 @@
 				4C1056811896DED60006306A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

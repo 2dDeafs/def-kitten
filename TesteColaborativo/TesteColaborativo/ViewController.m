@@ -18,12 +18,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UInt32 lala = 9;
+    struct AudioStreamBasicDescription aux;
+    deriveBufferSize(&aux);
+    NSLog(@"%lu", lala);
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+void deriveBufferSize(struct AudioStreamBasicDescription *aSBDescription)
+{
+    return;
 }
 
 @end
